@@ -1,4 +1,3 @@
-server:
-  servlet:
-    context-path: /api
-  port: 90
+spring:
+  profiles:
+    active:dev
