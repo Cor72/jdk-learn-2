@@ -2,6 +2,7 @@ package org.example.jdk;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -9,10 +10,11 @@ import java.util.Map;
 @SpringBootApplication
 @RestController
 @RequestMapping("/index")
+@MapperScan("org.example.jdk.mapper")
 public class JdkApplication {
     public static void main(String[] args){ SpringApplication.run(JdkApplication.class,args);}
 //    @GetMapping
-//    public String index()
+//    public String i ndex()
 //    {
 //        return "get request ";
 //    }
